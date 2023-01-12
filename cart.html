@@ -1,0 +1,192 @@
+<html>
+
+<head>
+    <title>CHECKOUT PAGE</title>
+    <link rel="stylesheet" href="ecommerce.css">
+</head>
+<body> 
+    <header class="header">
+    <nav class="navbar">
+        <div class="logo"><b>ZLEC STORES</b></div>
+        
+    </nav>
+</header>
+
+<section>
+    <table border="1"  id="t01" style="width:60%; padding=30px; margin: 50px;">
+        <tr>
+            <th>Select</th>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+
+        <tr>
+          <td><input type="checkbox" id="check1" value="100000" onclick="calculate(this);"></td>
+          <td><img src="images/generator.jpg"  width="150px" height="150px">Generator</td>
+          <td><button onclick="add();" id="firstbtn" >+</button>
+            <input style="font-size:20px; width:10%" id="quant1" type="text" readonly> 
+            <button onclick="subtract();" id="firstbtn" >-</button>  </td>
+          <td><p id="total"></p></td>
+        </tr>
+
+        <tr>
+          <td><input type="checkbox" id="check1" value="350000" onclick="calculate(this);"></td>
+          <td><img src="images/home theatre system.jpg"  width="150px" height="150px">Home Theatre</td>
+          <td><button onclick="add();" id="firstbtn" >+</button>
+            <input style="font-size:20px; width:10%" id="quant1" type="text" readonly> 
+            <button onclick="subtract();" id="firstbtn" >-</button>  </td>
+          <td><p id="total"></p></td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" id="check1" value="500000" onclick="calculate(this);"></td>
+            <td><img src="images/air-conditioner-6605973__340.jpg"  width="150px" height="150px">Air Conditioner</td>
+            <td><button onclick="add();" id="firstbtn" >+</button>
+              <input style="font-size:20px; width:10%" id="quant1" type="text" readonly> 
+              <button onclick="subtract();" id="firstbtn" >-</button>  </td>
+            <td><p id="total"></p></td>
+          </tr>
+
+          <tr>
+            <td><input type="checkbox" id="check1" value="80000" onclick="calculate(this);"></td>
+            <td><img src="images/water dispenser.jpg"  width="150px" height="150px">Water Dispenser</td>
+            <td><button onclick="add();" id="firstbtn" >+</button>
+              <input style="font-size:20px; width:10%" id="quant1" type="text" readonly> 
+              <button onclick="subtract();" id="firstbtn" >-</button>  </td>
+            <td><p id="total"></p></td>
+          </tr>
+
+          <tr>
+            <td><input type="checkbox" id="check1" value="350000" onclick="calculate(this);"></td>
+            <td><img src="images/cooker.jpg"  width="150px" height="150px">Cooker</td>
+            <td><button onclick="add();" id="firstbtn" >+</button>
+              <input style="font-size:20px; width:10%" id="quant1" type="text" readonly> 
+              <button onclick="subtract();" id="firstbtn" >-</button>  </td>
+            <td><p id="total"></p></td>
+          </tr>
+
+          <tr>
+            <td><input type="checkbox" id="check1" value="10000" onclick="calculate(this);"></td>
+            <td><img src="images/bitema blender.jpg"  width="150px" height="150px">Bitema Blender</td>
+            <td><button onclick="add();" id="firstbtn" >+</button>
+              <input style="font-size:20px; width:10%" id="quant1" type="text" readonly> 
+              <button onclick="subtract();" id="firstbtn" >-</button>  </td>
+            <td><p id="total"></p></td>
+          </tr>
+
+          <tr>
+            <td><input type="checkbox" id="check1" value="850000" onclick="calculate(this);"></td>
+            <td><img src="images/smart fridge.jpg"  width="150px" height="150px">Smart Fridge</td>
+            <td><button onclick="add();" id="firstbtn" >+</button>
+              <input style="font-size:20px; width:10%" id="quant1" type="text" readonly> 
+              <button onclick="subtract();" id="firstbtn" >-</button>  </td>
+            <td><p id="total"></p></td>
+          </tr>
+
+          <tr>
+            <td><input type="checkbox" id="check1" value="50000"  onclick="calculate(this);"></td>
+            <td><img src="images/microwave.jpg"   width="150px" height="150px">Microwave</td>
+            <td><button onclick="add();" id="firstbtn" >+</button>
+              <input style="font-size:20px; width:10%" id="quant1" type="text" readonly> 
+              <button onclick="subtract();" id="firstbtn" >-</button>  </td>
+            <td><p id="total"></p></td>
+          </tr>
+
+          <tr>
+            <td><input type="checkbox" id="check1" value="800000"  onclick="calculate(this);"></td>
+            <td><img src="images/LG-LED-TV-43-inch-LM5000PTA-Full-HD-LED-TV.jpg"   width="150px" height="150px">LG LED TV</td>
+            <td><button onclick="add();" id="firstbtn" >+</button>
+              <input style="font-size:20px; width:10%" id="quant1" type="text" readonly> 
+              <button onclick="subtract();" id="firstbtn" >-</button>  </td>
+            <td><p id="total"></p></td>
+          </tr>
+
+          <tr>
+            <td><input type="checkbox" id="check1" value="400000"  onclick="calculate(this);"></td>
+            <td><img src="images/Kitchen dish washer.png"  width="150px" height="150px">Kitchen dish washer</td>
+            <td><button onclick="add();" id="firstbtn" >+</button>
+              <input style="font-size:20px; width:10%" id="quant1" type="text" readonly> 
+              <button onclick="subtract();" id="firstbtn" >-</button>  </td>
+            <td><p id="total"></p></td>
+          </tr>
+
+          <tr>
+            <td><input type="checkbox" id="check1" value="50000"  onclick="calculate(this);"></td>
+            <td><img src="images/automatic electric kettle.jpg"  width="150px" height="150px">Automatic ELectric Kettle</td>
+            <td><button onclick="add();" id="firstbtn" >+</button>
+              <input style="font-size:20px; width:10%" id="quant1" type="text" readonly> 
+              <button onclick="subtract();" id="firstbtn" >-</button>  </td>
+            <td><p id="total"></p></td>
+          </tr>
+
+          <tr>
+            <td><input type="checkbox" id="check1" value="100000"  onclick="calculate(this);"></td>
+            <td><img src="images/WFVCZJX8211_Vacuum-Cleaner_main.jpg"   width="150px" height="150px">Vacuum Cleaner</td>
+            <td><button onclick="add();" id="firstbtn" >+</button>
+              <input style="font-size:20px; width:10%" id="quant1" type="text" readonly> 
+              <button onclick="subtract();" id="firstbtn" >-</button>  </td>
+            <td><p id="total"></p></td>
+          </tr>
+
+
+
+        
+      </table>
+</section>
+
+
+
+
+   
+<script>
+    var currentvalue=0;
+ 
+var total=0;
+var value=0;
+var quant1=0;
+const cartDom = document.querySelector(".t01");
+
+function add(){
+    document.getElementById('quant1').value=++currentvalue;
+}
+
+function subtract(){
+    document.getElementById('quant1').value=--currentvalue;
+}
+
+
+
+
+const cartItemsDom = cartDom.querySelectorAll(".cart-items");
+    cartItemsDom.forEach cartItemDom => {
+if (cartItemDom.querySelector(".cart_item_name").innerText === product.name) {
+
+cartTotal += parseInt(cartItemDom.querySelector(".quant1").innerText) 
+* parseInt(cartItemDom.querySelector(".value").innerText);
+document.querySelector('.pay').innerText = cartTotal + " N";
+}
+    }
+
+
+function calculate(box){
+
+    
+  
+
+
+if(box.checked==true){
+    value=parseInt(box.value);
+    total=total + value;
+    document.getElementById("total").innerHTML=total; //Add to the h1 tag
+    
+}
+else{
+    value=parseInt(box.value);
+    total=total - value;
+    document.getElementById("total").innerHTML=total; //Addd to the h1 tag
+}
+}
+</script>
+
+</html>
